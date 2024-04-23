@@ -11,4 +11,7 @@ class AppLinks {
   static String postWeather(String cityName) {
     return "$url?key=$apikey&q=$cityName&days=7";
   }
+  static String getDATE(String id) {
+    return "${baserUrl}product/id&$id";
+  }
 }
